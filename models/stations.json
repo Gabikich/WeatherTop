@@ -1,0 +1,42 @@
+{
+  "file": "./models/stations.json",
+  "stations": [
+    {
+      "name": "DUB STATION",
+      "_id": "4a0afdd3-4310-4e7d-b420-0374c9ed9695",
+      "reports": []
+    },
+    {
+      "name": "Wicklow Station",
+      "_id": "4d5bab7f-5541-473d-9d15-108bcaa86449",
+      "reports": []
+    },
+    {
+      "name": "Waterford Station",
+      "_id": "5e76ac54-5e6b-417e-95c5-5ce2f0b66458",
+      "reports": []
+    },
+    {
+      "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
+      "_id": "88908f8a-c6a8-4244-97ba-242f1435b591",
+      "reports": []
+    },
+    {
+      "userid": "e24e5130-5b05-445f-8914-58fc56c729fc",
+      "_id": "ecd6263a-5561-4a45-9a1a-09055f4c8fbf",
+      "reports": []
+    },
+    {
+      "name": "Dublin Station",
+      "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
+      "_id": "81aef1eb-3cbd-450a-beaa-d1df92a06018",
+      "reports": []
+    },
+    {
+      "name": "Dublin Station",
+      "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
+      "_id": "845ae8fd-fca5-4c91-81b1-5afa162e6371",
+      "reports": []
+    }
+  ]
+}

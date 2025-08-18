@@ -1,0 +1,43 @@
+<hr class="my-5" />
+
+<h2 class="title is-5">Add Station</h2>
+<form action="/dashboard/addstation" method="POST" class="box">
+  
+  <div class="field is-horizontal">
+    
+    <div class="field-body">
+
+      <!-- Name -->
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" name="name" placeholder="e.g. Tramore" required />
+        </div>
+      </div>
+
+      <!-- Latitude -->
+      <div class="field">
+        <label class="label">Latitude</label>
+        <div class="control">
+          <input class="input" type="text" name="lat" placeholder="e.g. 00.00" required />
+        </div>
+      </div>
+
+      <!-- Longitude -->
+      <div class="field">
+        <label class="label">Longitude</label>
+        <div class="control">
+          <input class="input" type="text" name="lng" placeholder="e.g. -00.00" required />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="control mt-3">
+    <button class="button is-info">
+      <iconify-icon icon="mdi:plus" class="mr-1"></iconify-icon>
+      Add Station
+    </button>
+  </div>
+</form>

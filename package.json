@@ -1,7 +1,7 @@
 {
-  "name": "playlist",
+  "name": "weather-top",
   "version": "0.1.0",
-  "description": "Simple Playlist Maker",
+  "description": "WeatherTop Baseline",
   "main": "server.js",
   "type": "module",
   "scripts": {

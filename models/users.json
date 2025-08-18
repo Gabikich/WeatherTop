@@ -1,0 +1,19 @@
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Gabriela",
+      "lastName": "Franke",
+      "email": "gabikich@unochapeco.edu.br",
+      "password": "gabriela",
+      "_id": "503af3e7-b23d-4331-b819-c017523c8fd2"
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "Paula",
+      "email": "paulapaula@gmail.com",
+      "password": "paula",
+      "_id": "e24e5130-5b05-445f-8914-58fc56c729fc"
+    }
+  ]
+}

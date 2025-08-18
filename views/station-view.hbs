@@ -1,0 +1,23 @@
+{{!-- {{> menu active="dashboard"}}
+
+<section class="section">
+  <div class="title">
+    {{station.name}}
+  </div>
+
+  {{> list-report}}
+  {{> add-report}}
+</section>
+
+ --}}
+
+{{> menu active="dashboard"}}
+
+<section class="section">
+  <div class="title">
+    {{station.name}}
+  </div>
+
+  {{> list-report station=station}}
+  {{> add-report  station=station}}
+</section>
