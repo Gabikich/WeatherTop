@@ -20,6 +20,10 @@ router.get("/about", aboutController.index);
 //station
 router.get("/station/:id", stationController.index);
 router.post("/station/:id/addreport", reportController.addReport);
+router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
+router.get("/station/:stationid/deletereport/:reportid", stationController.deleteReport);
+
+
 
 //accounts / welcome
 router.get("/", accountsController.index);

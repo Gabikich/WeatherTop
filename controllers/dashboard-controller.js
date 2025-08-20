@@ -25,4 +25,18 @@ async addStation(request, response) {
     response.redirect("/dashboard");
   }, 
 
-};
+    async deleteStation(request, response) {
+    const stationId = request.params.id;
+    console.log(`Deleting Station ${stationId}`);
+    await stationStore.deleteStationById(stationId);
+    response.redirect("/dashboard");
+  },
+
+    async deleteReport(request, response) {
+    const stationId = request.params.id;
+    console.log(`Deleting report ${stationId}`);
+    await stationStore.deleteReportById(reportId);
+    response.redirect("/dashboard");
+  },
+
+  };

@@ -25,10 +25,10 @@ It is based on the course labs but adapted to manage **weather stations and weat
 - **Bulma** CSS framework
 
 
-Install Dependencies
+Install Dependencies:
 
 - npm install
 
-RUn the application
+Run the application:
 
 - npm start

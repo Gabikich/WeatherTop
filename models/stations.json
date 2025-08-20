@@ -17,25 +17,14 @@
       "reports": []
     },
     {
-      "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
-      "_id": "88908f8a-c6a8-4244-97ba-242f1435b591",
-      "reports": []
-    },
-    {
       "userid": "e24e5130-5b05-445f-8914-58fc56c729fc",
       "_id": "ecd6263a-5561-4a45-9a1a-09055f4c8fbf",
       "reports": []
     },
     {
-      "name": "Dublin Station",
+      "name": "Cork Station",
       "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
-      "_id": "81aef1eb-3cbd-450a-beaa-d1df92a06018",
-      "reports": []
-    },
-    {
-      "name": "Dublin Station",
-      "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
-      "_id": "845ae8fd-fca5-4c91-81b1-5afa162e6371",
+      "_id": "d02c8791-0b03-440e-b036-d3ba43167a7e",
       "reports": []
     }
   ]

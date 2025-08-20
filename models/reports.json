@@ -48,6 +48,78 @@
       "pressure": 1,
       "_id": "ec2a2fb9-ef61-4036-8624-c7d19cb73819",
       "stationid": "81aef1eb-3cbd-450a-beaa-d1df92a06018"
+    },
+    {
+      "code": 900,
+      "temp": 20,
+      "windSpeed": 10,
+      "pressure": 0,
+      "windDirection": "N",
+      "_id": "e91499bc-7b47-4c76-b631-4c732959c7a7",
+      "stationid": "c399ed49-f994-4956-a6ff-2071c545de57"
+    },
+    {
+      "code": null,
+      "temp": 20,
+      "windSpeed": 12,
+      "pressure": 0,
+      "windDirection": "N",
+      "_id": "07350dea-607e-4060-8f4c-ef98f04dc89c",
+      "stationid": "d37adcb9-78b9-4816-befb-f2d976de02ce"
+    },
+    {
+      "code": 900,
+      "temp": 18,
+      "windSpeed": 12,
+      "pressure": 0,
+      "windDirection": "NE",
+      "_id": "06835c2d-1198-473e-806f-de8bce36f7fb",
+      "stationid": "d37adcb9-78b9-4816-befb-f2d976de02ce"
+    },
+    {
+      "code": 200,
+      "temp": 20,
+      "windSpeed": 10,
+      "pressure": 0,
+      "windDirection": "ENE",
+      "_id": "984729f3-2224-474b-aecd-68756361497d",
+      "stationid": "d37adcb9-78b9-4816-befb-f2d976de02ce"
+    },
+    {
+      "code": 233,
+      "temp": 23,
+      "windSpeed": 12,
+      "pressure": 1,
+      "windDirection": "SE",
+      "_id": "24e6970d-199f-4920-85df-54478a24a94a",
+      "stationid": "d37adcb9-78b9-4816-befb-f2d976de02ce"
+    },
+    {
+      "code": 100,
+      "temp": 25,
+      "windSpeed": 20,
+      "pressure": 2,
+      "windDirection": "N",
+      "_id": "927ef98f-5add-40b6-9d59-5064cddebe34",
+      "stationid": "d37adcb9-78b9-4816-befb-f2d976de02ce"
+    },
+    {
+      "code": 50,
+      "temp": 30,
+      "windSpeed": 5,
+      "pressure": 5,
+      "windDirection": "NE",
+      "_id": "037c565e-6bc0-4a38-9963-f545772bde50",
+      "stationid": "d37adcb9-78b9-4816-befb-f2d976de02ce"
+    },
+    {
+      "code": 200,
+      "temp": 25,
+      "windSpeed": 18,
+      "pressure": 0,
+      "windDirection": "S",
+      "_id": "410fc578-186d-4f58-9447-6ea49446a12c",
+      "stationid": "d02c8791-0b03-440e-b036-d3ba43167a7e"
     }
   ]
 }

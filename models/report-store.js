@@ -30,8 +30,17 @@ export const reportStore = {
 
   async deleteReport(id) {
     await db.read();    
-    const index = db.data.reports.findIndex((report) => report._id === id);
+    const index = db.data.reports.filter((r) => report._id === id);
     db.data.reports.splice(index, 1);
     await db.write();
   },
+
+  async deleteReportById(id) {
+  await db.read();
+  db.data.reports = db.data.reports.filter((r) => r._id !== id);
+  await db.write();
+}
+
 };
+
+
