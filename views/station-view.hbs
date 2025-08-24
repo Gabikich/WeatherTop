@@ -1,33 +1,127 @@
-
 {{> menu active="dashboard"}}
 
+<!-- BACK BUTTON -->
+<div class="mb-4 has-text-centered has-text-weight-bold">
+  <a href="/dashboard" class="button is-light"> Back to Dashboard</a>
+</div>
+
 <section class="section">
-  <div class="title">
+  <div class="title has-text-centered">
     {{station.name}}
   </div>
+  
+  <div class="container">
 
+    <!-- Mini-Cards SUMMARY -->
     <div class="columns">
-    <div class="column">
-      <div class="box">
-        <p class="has-text-weight-semibold">Temperature (°C)</p>
-        <p>Min: {{stats.minTemp}} • Max: {{stats.maxTemp}}</p>
+      <!-- Weather -->
+      <div class="column is-3">
+        <div class="box has-background-info has-text-white has-text-centered">
+          <p class="has-text-weight-bold"> ☁️ Weather</p>
+          {{#if summary}}
+            <img src="{{summary.icon}}" alt="Weather icon" width="45" />
+            <p>{{summary.description}}</p>
+          {{else}}
+            <p>No data</p>
+          {{/if}}
+        </div>
+      </div>
+
+      <!-- Temperature -->
+      <div class="column is-3">
+        <div class="box has-background-info has-text-white has-text-centered">
+          <p class="has-text-weight-bold">🌡️ Temperature</p>
+          <p>Min: {{stats.minTemp}} °C</p>
+          <p>Max: {{stats.maxTemp}} °C</p>
+        </div>
+      </div>
+
+      <!-- Wind -->
+      <div class="column is-3">
+        <div class="box has-background-info has-text-white has-text-centered">
+          <p class="has-text-weight-bold">💨 Wind</p>
+          <p>Min: {{stats.minWind}} km/h</p>
+          <p>Max: {{stats.maxWind}} km/h</p>
+        </div>
+      </div>
+
+      <!-- Pressure -->
+      <div class="column is-3">
+        <div class="box has-background-info has-text-white has-text-centered">
+          <p class="has-text-weight-bold">⏱ Pressure</p>
+          <p>Min: {{stats.minPressure}} hPa</p>
+          <p>Max: {{stats.maxPressure}} hPa</p>
+        </div>
       </div>
     </div>
-    <div class="column">
-      <div class="box">
-        <p class="has-text-weight-semibold">Wind (km/h)</p>
-        <p>Min: {{stats.minWind}} • Max: {{stats.maxWind}}</p>
-      </div>
-    </div>
-    <div class="column">
-      <div class="box">
-        <p class="has-text-weight-semibold">Pressure (hPa)</p>
-        <p>Min: {{stats.minPressure}} • Max: {{stats.maxPressure}}</p>
-      </div>
+
+    {{> list-report station=station}}
+    {{> add-report station=station}}
+
+    <!-- Button Auto Reading -->
+    <div class="mb-4 has-text-centered">
+      <form action="/dashboard/addreport" method="POST">
+        <input type="hidden" name="lat" value="{{station.lat}}">
+        <input type="hidden" name="lng" value="{{station.lng}}">
+        <input type="hidden" name="id" value="{{station._id}}">
+        <button class="button is-danger has-text-weight-bold"> 
+          Auto Generating Reading (OpenWeather)
+        </button>
+      </form>
     </div>
   </div>
-
-   {{> list-report station=station}}
-  {{> add-report  station=station}}
-
 </section>
+
+    <!-- MAP BOX -->
+  <div id="map" style="height: 270px; margin-bottom: 20px;"></div>
+
+<!-- Leaflet Script -->
+<script>
+  const lat = {{station.lat}};  
+  const lng = {{station.lng}};
+
+  // initialize the map inside the div
+  const map = L.map('map').setView([lat, lng], 10);
+
+  // layers (OpenStreetMap)
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // station marker
+  L.marker([lat, lng]).addTo(map)
+    .bindPopup('{{station.name}}')
+    .openPopup();
+</script>
+
+<!-- Chart -->
+<div class="box" id="chart"></div>
+<script>
+  const data = {
+    labels: [
+      {{#each reading.trendLabels}}
+        "{{this}}",
+      {{/each}}
+    ],
+    datasets: [
+      {
+        name: "Temperature",
+        type: "line",
+        values: [
+          {{#each reading.tempTrend}}
+            {{this}},
+          {{/each}}
+        ]
+      }
+    ]
+  };
+
+  const chart = new frappe.Chart("#chart", {
+    title: "Temperature Trend",
+    data: data,
+    type: "line",
+    height: 250,
+    colors: ["#ff6b6b"]
+  });
+</script>

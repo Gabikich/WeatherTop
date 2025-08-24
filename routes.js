@@ -19,9 +19,13 @@ router.get("/about", aboutController.index);
 
 //station
 router.get("/station/:id", stationController.index);
-router.post("/station/:id/addreport", reportController.addReport);
+router.post("/station/:id/addreport", reportController.addReport); // add report manual 
 router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
 router.get("/station/:stationid/deletereport/:reportid", stationController.deleteReport);
+
+// auto reading from API OpenWeather
+
+router.post("/dashboard/addreport", dashboardController.addreport); // add auto report 
 
 
 

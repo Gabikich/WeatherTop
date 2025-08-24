@@ -50,11 +50,4 @@ export const accountsController = {
     return await userStore.getUserByEmail(userEmail);
   },
 
-    async getLoggedInUser(request) {
-    const userEmail = request.cookies.station;
-    return await userStore.getUserByEmail(userEmail);
-  },
-
-
-
 };

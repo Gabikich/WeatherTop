@@ -24,12 +24,6 @@ export const stationStore = {
     return db.data.stations.find((station) => station._id === id);
   },
 
-  async deleteStation(id) {
-    await db.read();
-    db.data.stations = db.data.stations.filter((s) => s._id !== id);
-    await db.write();
-  },
-
   async deleteStationById(id) {
   await db.read();
   db.data.stations = db.data.stations.filter((s) => s._id !== id);
@@ -39,7 +33,5 @@ export const stationStore = {
   async getStationsByUserId(userid) {
     await db.read();
     return db.data.stations.filter((station) => station.userid === userid);
-  },
-
-
+  },  
 };

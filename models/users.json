@@ -14,6 +14,13 @@
       "email": "paulapaula@gmail.com",
       "password": "paula",
       "_id": "e24e5130-5b05-445f-8914-58fc56c729fc"
+    },
+    {
+      "firstName": "bruno",
+      "lastName": "dalatiel",
+      "email": "brunosalatiel@gmail.com",
+      "password": "11",
+      "_id": "5bf3cef5-dedd-414c-9ab7-629a77057731"
     }
   ]
 }

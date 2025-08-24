@@ -22,9 +22,37 @@
       "reports": []
     },
     {
+      "name": "Dublin Station",
+      "userid": "5bf3cef5-dedd-414c-9ab7-629a77057731",
+      "_id": "34182dac-abf2-4283-8571-e344074d2b85",
+      "reports": []
+    },
+    {
+      "name": "amsterdam station",
+      "userid": "5bf3cef5-dedd-414c-9ab7-629a77057731",
+      "_id": "c2cc0396-484a-4b75-956a-00252a0f2fce",
+      "reports": []
+    },
+    {
       "name": "Cork Station",
+      "userid": "5bf3cef5-dedd-414c-9ab7-629a77057731",
+      "_id": "5110cf92-54bf-49f9-9e97-5a9210bcb61e",
+      "reports": []
+    },
+    {
+      "name": "Tramore Station",
       "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
-      "_id": "d02c8791-0b03-440e-b036-d3ba43167a7e",
+      "lat": 52.1624,
+      "lng": -7.1524,
+      "_id": "aacb729d-9794-42a5-ba10-dfc0941ad648",
+      "reports": []
+    },
+    {
+      "name": "Dublin Station",
+      "userid": "503af3e7-b23d-4331-b819-c017523c8fd2",
+      "lat": 10,
+      "lng": -8,
+      "_id": "c8863c6d-d9d5-48af-b8f5-9cf2fd38805d",
       "reports": []
     }
   ]

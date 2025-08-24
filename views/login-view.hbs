@@ -1,7 +1,12 @@
 {{> welcome-menu active="login"}}
 
 <section class="section">
-  <h1 class="title">Log in</h1>
+
+   <div class="container has-text-centered">
+<iconify-icon icon="mdi:weather-partly-cloudy" width="80" height="80" class="mb-4"></iconify-icon>
+<h1 class="title">LOG IN</h1>
+</div>
+
   <form action="/authenticate" method="POST">
     <div class="field">
       <label class="label">Email</label> <input class="input" type="text" placeholder="Enter email" name="email">
